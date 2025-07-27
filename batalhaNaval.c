@@ -47,10 +47,20 @@ int main() {
     tabuleiro[4][3] = 3;
     tabuleiro[5][3] = 3;
 
+    //Navio Diagonal 1
+    tabuleiro[5][5] = 3;
+    tabuleiro[6][6] = 3;
+    tabuleiro[7][7] = 3;
+
+    //Navio diagonal 2
+    tabuleiro[1][5] = 3;
+    tabuleiro[2][6] = 3;
+    tabuleiro[3][7] = 3;
+
     // loop para exibir o "tabuleiro"
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-            printf("%d", tabuleiro[i][j]);
+            printf("%d ", tabuleiro[i][j]);
         }
         printf("\n");
     }
