@@ -25,7 +25,7 @@ int main() {
     // 0 0 1 0 0
     // 0 1 1 1 0
     // 1 1 1 1 1
-    
+
     // Exemplo para habilidade em octaedro:
     // 0 0 1 0 0
     // 0 1 1 1 0
@@ -35,25 +35,25 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
-    
-    int tabuleiro[5][5] = {0};
+
+    int tabuleiro[10][10] = {0};
     // Navio Horizontal
-    tabuleiro[1][1] = 1;
-    tabuleiro[1][2] = 1;
-    tabuleiro[1][3] = 1;
+    tabuleiro[1][1] = 3;
+    tabuleiro[1][2] = 3;
+    tabuleiro[1][3] = 3;
 
     //Navio Vertical
-    tabuleiro[3][3] = 1;
-    tabuleiro[4][3] = 1;
+    tabuleiro[3][3] = 3;
+    tabuleiro[4][3] = 3;
+    tabuleiro[5][3] = 3;
 
     // loop para exibir o "tabuleiro"
-    for (int i = 0; i < 5; i++) {
-        for (int j = 0; j < 5; j++) {
-            if (tabuleiro[i][j] == 1) {
-                printf("Navio em: [%d][%d]\n", i, j);
-            }
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf("%d", tabuleiro[i][j]);
         }
+        printf("\n");
     }
 
-    return 0;
+return 0;
 }
