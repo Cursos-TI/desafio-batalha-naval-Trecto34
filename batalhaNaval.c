@@ -35,6 +35,25 @@ int main() {
     // 0 0 1 0 0
     // 1 1 1 1 1
     // 0 0 1 0 0
+    
+    int tabuleiro[5][5] = {0};
+    // Navio Horizontal
+    tabuleiro[1][1] = 1;
+    tabuleiro[1][2] = 1;
+    tabuleiro[1][3] = 1;
+
+    //Navio Vertical
+    tabuleiro[3][3] = 1;
+    tabuleiro[4][3] = 1;
+
+    // loop para exibir o "tabuleiro"
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (tabuleiro[i][j] == 1) {
+                printf("Navio em: [%d][%d]\n", i, j);
+            }
+        }
+    }
 
     return 0;
 }
